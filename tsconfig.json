@@ -1,0 +1,27 @@
+{
+  "include": ["src/**/*", "vite.config.ts"],
+  "exclude": ["node_modules", "dist", "**/*.test.ts"],
+  "compilerOptions": {
+    "incremental": true,
+    "isolatedModules": true,
+    "module": "esnext",
+    "moduleResolution": "bundler",
+    "target": "es2022",
+    "lib": ["esnext", "dom", "dom.iterable"],
+    "jsx": "preserve",
+    "noEmit": true,
+    "resolveJsonModule": true,
+    "allowImportingTsExtensions": true,
+    "skipLibCheck": true,
+    "strict": true,
+    "strictNullChecks": true,
+    "noImplicitAny": true,
+    "noImplicitReturns": true,
+    "noFallthroughCasesInSwitch": true,
+    "noUnusedLocals": false,
+    "types": ["node", "vite/client"],
+    "paths": {
+      "@/*": ["./src/*"]
+    }
+  }
+}
